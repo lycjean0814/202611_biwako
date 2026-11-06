@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "trip_id": "202611_biwako",
-  "trip_name": "2026 琵琶湖單車旅行",
-  "subtitle": "11/15–11/19｜關西・琵琶湖",
+  "trip_id": "202611_biwako_osaka",
+  "trip_name": "2026 琵琶湖自行車旅行＋大阪行程",
+  "subtitle": "11/15–11/21｜關西・琵琶湖・大阪",
   "timezone": "Asia/Taipei",
   "trip_start": "2026-11-15",
-  "trip_end": "2026-11-19",
-
+  "trip_end": "2026-11-21",
   "theme": {
     "bg": "#f4f6f8",
     "card": "#ffffff",
@@ -22,140 +21,192 @@
     "summary_border": "#dbeafe",
     "theme_color": "#1f2937"
   },
-
   "summary": {
-    "title": "琵琶湖單車環湖之旅",
-    "description": "5 天 4 夜｜自行車旅行｜大津 → 長濱 → 高島 → 大津",
+    "title": "琵琶湖自行車旅行＋大阪行程",
+    "description": "7 天 6 夜｜4人同行｜大津 → 長濱 → 高島 → 大津 → 近江八幡 → 大阪",
     "highlights": [
-      "4 晚住宿",
-      "3 天單車騎乘",
-      "11/16 取車",
-      "11/18 還車"
+      "6 晚住宿",
+      "3 天電輔車環湖騎乘",
+      "11/16 大津港 09:00 取車",
+      "11/18 16:00 大津港還車（最晚 16:30）",
+      "11/19 近江八幡半日遊",
+      "11/20 大阪市區＋梅田購物",
+      "11/21 關西機場返台"
     ]
   },
-
   "flights": [
     {
       "date": "2026-11-15",
       "flight": "VZ566",
       "passenger_count": 2,
-      "note": "航班時間、起訖機場及航廈待補"
+      "type": "arrival",
+      "note": "抵達關西機場（時間與航廈待核對）"
     },
     {
       "date": "2026-11-15",
       "flight": "BR132",
       "passenger_count": 2,
-      "note": "航班時間、起訖機場及航廈待補"
+      "type": "arrival",
+      "note": "抵達關西機場（時間與航廈待核對）"
+    },
+    {
+      "date": "2026-11-21",
+      "flight": "SL397",
+      "passenger_count": 2,
+      "type": "departure",
+      "note": "Thai Lion Air（預計 13:40 起飛，以電子機票為準，T1）"
+    },
+    {
+      "date": "2026-11-21",
+      "flight": "CI153",
+      "passenger_count": 2,
+      "type": "departure",
+      "note": "China Airlines（預計 14:30 起飛，以電子機票為準，T1）"
     }
   ],
-
   "todos": [
     {
-      "id": "flight-details",
-      "title": "補齊兩班航班資訊",
-      "description": "確認 VZ566、BR132 的起降時間、機場及航廈"
+      "id": "flight-details-arr",
+      "title": "11/15 入境航班資訊確認",
+      "description": "確認 VZ566、BR132 實際抵達時間、航廈、行李轉盤及會合地點"
     },
     {
-      "id": "rental-details",
-      "title": "確認自行車租借資訊",
-      "description": "確認租車店地址、車款、預約資料及取還車規則"
+      "id": "haruka-tickets",
+      "title": "11/15 HARUKA 車票與中停規劃",
+      "description": "確認 HARUKA 班次車票，並依抵達時間決定京都是否中停"
     },
     {
-      "id": "luggage-storage",
-      "title": "確認 11/19 大津站附近行李寄放",
-      "description": "確認觀光案內所或其他寄物服務的營業時間、尺寸限制、費用及可否寄放"
+      "id": "flight-details-dep",
+      "title": "11/21 返台航班資訊確認",
+      "description": "核對 SL397、CI153 電子機票實際起飛時間、航廈與報到截止時間"
     },
     {
-      "id": "luggage-delivery",
-      "title": "確認行李配送安排",
-      "description": "確認大件行李寄送、各住宿收件規則及配送日期"
+      "id": "kix-express",
+      "title": "11/21 JR 關空快速班次與退稅流程",
+      "description": "確認關空快速班次（目標 10:30 前抵達 KIX），並依 2026/11/1 新制了解海關退稅流程"
     },
     {
-      "id": "route-check",
-      "title": "確認三天騎乘路線與休息點",
-      "description": "補齊每日實際路線、里程、補給點及休息點"
+      "id": "bike-rental",
+      "title": "11/16 租車與行李寄放確認",
+      "description": "確認大津港 09:00 取車預約、電輔車配件（車燈/鎖具/反光）及行李加購寄放"
     },
     {
-      "id": "restaurant-check",
-      "title": "整理沿途餐廳與補給選項",
-      "description": "補上各日早餐、午餐、晚餐及便利商店／超市資訊"
+      "id": "route-day2-recalc",
+      "title": "11/17 Day 2 騎乘路線重算",
+      "description": "因住宿改為高島陣舎，需重新導航核算長濱至高島陣舎之實際里程與時間（粗估 85-95 km）"
     },
     {
-      "id": "nov15-supermarket",
-      "title": "11/15 抵達大津後採買",
-      "description": "已列入行程規劃，確認當天抵達時間後安排採買"
+      "id": "route-day3-recalc",
+      "title": "11/18 Day 3 騎乘路線與浮御堂確認",
+      "description": "重新導航高島陣舎出發至白鬚神社、近江舞子、浮御堂（必訪）、大津港之里程與時間，確認 16:00 前抵達"
+    },
+    {
+      "id": "otsu-luggage-storage",
+      "title": "11/19 大津站行李寄放確認",
+      "description": "確認大津站觀光案內所或大型置物櫃之件數、尺寸限制、費用及取件時間"
+    },
+    {
+      "id": "omihachiman-sightseeing",
+      "title": "11/19 八幡山纜車與遊船檢修確認",
+      "description": "確認八幡山纜車 11/19 是否檢修停駛及八幡堀遊船營運狀態"
+    },
+    {
+      "id": "mos-haikyu",
+      "title": "11/20 MOS Burger 聯名與門市確認",
+      "description": "確認 Whity Umeda 門市是否參與排球少年第一波聯名活動與贈品庫存"
     }
   ],
-
   "days": [
     {
       "date": "2026-11-15",
-      "city": "關西空港 → 京都 → 大津",
+      "city": "關西機場 → 京都 → 大津",
       "lodging": "Toyoko Inn Kyoto Biwako Otsu",
       "items": [
         {
-          "time": "抵達後",
-          "title": "關西空港集合與出境",
-          "description": "兩班航班：VZ566 2 人、BR132 2 人。依實際抵達時間會合。",
-          "type": "transport"
-        },
-        {
           "time": "中午",
-          "title": "搭乘 Haruka 前往京都",
-          "description": "由關西空港搭乘 Haruka 前往京都，途中是否停留京都吃飯，視抵達時間與行李狀況決定。",
+          "title": "抵達關西機場與會合",
+          "description": "4 人分搭 VZ566 (2人) 與 BR132 (2人) 抵達關西機場，完成入境與領取行李後會合。",
           "type": "transport",
           "location": "Kansai International Airport"
         },
         {
           "time": "下午",
-          "title": "京都 → 大津",
-          "description": "抵達大津後前往飯店辦理入住或寄放行李。",
+          "title": "搭乘 HARUKA 前往京都／大津",
+          "description": "搭乘 HARUKA 前往京都。若時間與體力充裕可於京都站附近用餐、逛街；若時間較晚則直接前往大津。",
           "type": "transport",
+          "location": "Kyoto Station / Otsu Station"
+        },
+        {
+          "time": "傍晚",
+          "title": "辦理入住 Toyoko Inn Kyoto Biwako Otsu",
+          "description": "抵達大津飯店辦理入住，稍作休息。",
+          "type": "hotel",
           "location": "Toyoko Inn Kyoto Biwako Otsu"
         },
         {
-          "time": "入住後",
-          "title": "大津市區活動與晚餐",
-          "description": "安排採買、吃飯及隔日騎乘行李整理。",
-          "type": "activity",
-          "location": "Otsu, Shiga, Japan"
-        },
-        {
           "time": "晚上",
-          "title": "超市採買",
-          "description": "採買隔日早餐、飲料、騎乘補給及所需用品。",
-          "type": "shopping"
+          "title": "超市採買與騎乘準備",
+          "description": "至 Friend Mart 大津站前店或 Fresco 大津店採買飲水、運動飲料、補給品與隔日早餐。整理騎車用包款與手機車燈充電。",
+          "type": "shopping",
+          "location": "Friend Mart Otsu / Fresco Otsu"
         }
       ]
     },
     {
       "date": "2026-11-16",
-      "city": "大津 → 長濱",
+      "city": "自行車 Day 1：大津 → 彥根 → 長浜",
       "lodging": "Kitabiwako Hotel Grazie",
       "items": [
         {
-          "time": "取車前",
-          "title": "早餐",
-          "description": "取車前先吃完早餐。",
-          "type": "food"
+          "time": "07:00",
+          "title": "外出早餐",
+          "description": "首選 MARKET Espresso & Vegetables，備選 Tea Room Sympathy / Coffee House Milestone / 喫茶ルンルン。",
+          "type": "food",
+          "location": "MARKET Espresso & Vegetables"
+        },
+        {
+          "time": "08:00 - 08:30",
+          "title": "退房與前往大津港",
+          "description": "回飯店取行李退房，步行前往大津港旅客ターミナル（Biwako Rental Bike Shop）。",
+          "type": "transport",
+          "location": "Biwako Rental Bike Shop"
         },
         {
           "time": "09:00",
-          "title": "租車取車",
-          "description": "已預約 09:00 取車。確認車況、配件及行李安排後出發。",
-          "type": "transport"
+          "title": "取車與行李寄放",
+          "description": "領取電輔車、確認車況與車燈配件，大件行李辦理店家寄放。",
+          "type": "cycling"
         },
         {
-          "time": "取車後",
-          "title": "大津 → 長濱單車騎乘",
-          "description": "依既定規劃騎至長濱住宿點。沿途里程、休息點及補給點待補入。",
-          "type": "cycling",
-          "location": "Otsu, Shiga, Japan"
+          "time": "09:20 - 12:00",
+          "title": "沿琵琶湖湖岸北上騎乘",
+          "description": "預計里程約 85-90 km（估值）。途經草津湖岸、野洲湖岸、守山湖岸休息拍照。",
+          "type": "cycling"
         },
         {
-          "time": "抵達後",
-          "title": "Kitabiwako Hotel Grazie",
-          "description": "抵達長濱住宿點，辦理入住及休息。",
+          "time": "中午",
+          "title": "午餐：近江牛（彥根夢京橋）",
+          "description": "首選「近江肉 せんなり亭 伽羅」（推薦近江牛和風肋眼牛排丼、壽喜燒），備選「近江牛レストラン 弥千代姫」。",
+          "type": "food",
+          "location": "夢京橋城堡大道"
+        },
+        {
+          "time": "午後",
+          "title": "參觀彥根城與玄宮園",
+          "description": "必訪景點，預留 90-120 分鐘參觀古城與日式庭園。",
+          "type": "activity",
+          "location": "Hikone Castle"
+        },
+        {
+          "time": "下午",
+          "title": "續騎往長浜",
+          "description": "經宮ヶ浜、道之驛 近江母之鄉續往長浜（若早抵達可短停長浜豐公園）。",
+          "type": "cycling"
+        },
+        {
+          "time": "17:30",
+          "title": "抵達 Kitabiwako Hotel Grazie 入住",
+          "description": "目標 17:30 前抵達飯店辦理入住，注意日落後騎乘前後燈使用。",
           "type": "hotel",
           "location": "Kitabiwako Hotel Grazie"
         }
@@ -163,61 +214,95 @@
     },
     {
       "date": "2026-11-17",
-      "city": "長濱 → 高島",
-      "lodging": "Imazu Sun Bridge Hotel",
+      "city": "自行車 Day 2：長浜 → 高島",
+      "lodging": "高島陣舎（Takashima Jinya）",
       "items": [
         {
+          "time": "08:00 - 08:30",
+          "title": "早餐與退房出發",
+          "description": "長浜出發，粗估里程約 85-95 km（需依新住宿重新核算）。",
+          "type": "cycling",
+          "location": "Nagahama"
+        },
+        {
           "time": "上午",
-          "title": "長濱出發",
-          "description": "早餐後整理裝備，依規劃路線出發。",
-          "type": "cycling",
-          "location": "Nagahama, Shiga, Japan"
+          "title": "沿途景點巡禮",
+          "description": "依序經過長浜豐公園（短停）、湖北水鳥公園、木之本宿散散步拍照。",
+          "type": "cycling"
         },
         {
-          "time": "白天",
-          "title": "長濱 → 高島單車騎乘",
-          "description": "今日目標為騎抵高島住宿點。里程、休息點及補給點待補入。",
-          "type": "cycling",
-          "location": "Takashima, Shiga, Japan"
+          "time": "中午前後",
+          "title": "海津大崎湖岸短停與牧野午餐",
+          "description": "海津大崎僅至入口湖岸園地短停。午餐候選：なみ木食堂 ツバメ（日式定食）或 並木カフェ メタセコイア（輕食咖啡）。",
+          "type": "food",
+          "location": "Makino Pickland"
         },
         {
-          "time": "抵達後",
-          "title": "Imazu Sun Bridge Hotel",
-          "description": "抵達住宿點，辦理入住及休息。",
+          "time": "下午",
+          "title": "水杉林道與大荒比古神社",
+          "description": "水杉林道拍照（注意車道安全禁停），參觀賞楓景點大荒比古神社。",
+          "type": "activity",
+          "location": "Metasequoia Namiki / Ohara Hiko Shrine"
+        },
+        {
+          "time": "傍晚",
+          "title": "抵達高島陣舎入住",
+          "description": "抵達高島市勝野 1330 辦理入住。若尚有體力可步行探索近江高島站周邊（大溝城跡、乙女ヶ池）。",
           "type": "hotel",
-          "location": "Imazu Sun Bridge Hotel"
+          "location": "Takashima Jinya"
         }
       ]
     },
     {
       "date": "2026-11-18",
-      "city": "高島 → 大津",
+      "city": "自行車 Day 3：高島 → 大津",
       "lodging": "Toyoko Inn Kyoto Biwako Otsu",
       "items": [
         {
+          "time": "08:30",
+          "title": "高島陣舎退房出發",
+          "description": "路線：高島陣舎 → 白鬚神社 → 近江舞子 → 浮御堂 → 大津港。舊估 55-65 km（起點變更需重算）。",
+          "type": "cycling",
+          "location": "Takashima Jinya"
+        },
+        {
           "time": "上午",
-          "title": "高島出發",
-          "description": "早餐後整理裝備，依規劃路線出發。",
+          "title": "白鬚神社參觀",
+          "description": "使用「藍湖白鬚台」展望台拍攝湖中鳥居（嚴禁穿越國道161號）。停留約 20-30 分鐘。",
+          "type": "activity",
+          "location": "Shirahige Shrine"
+        },
+        {
+          "time": "上午",
+          "title": "近江舞子湖岸短停",
+          "description": "湖岸拍照休息（約 10-15 分鐘）。",
           "type": "cycling",
-          "location": "Takashima, Shiga, Japan"
+          "location": "Omimaiko"
         },
         {
-          "time": "白天",
-          "title": "高島 → 大津單車騎乘",
-          "description": "今日目標為騎回大津租車店。預留還車及整理裝備時間。",
-          "type": "cycling",
-          "location": "Otsu, Shiga, Japan"
+          "time": "中午",
+          "title": "午餐：白鬚周邊餐廳",
+          "description": "候選 1：白ひげ食堂（豚汁烏龍麵/拉麵/關東煮）；候選 2：白ひげ蕎麦（蕎麥麵/近江牛）。",
+          "type": "food"
         },
         {
-          "time": "16:30 左右",
-          "title": "自行車歸還",
-          "description": "營業時間至 17:00。請於關店前約 30 分鐘歸還車輛，避免壓線。",
-          "type": "transport"
+          "time": "下午",
+          "title": "參觀浮御堂（必訪）",
+          "description": "位於堅田一帶之必訪景點，預留充裕參觀時間。",
+          "type": "activity",
+          "location": "Ukimido (Mangetsu-ji)"
         },
         {
-          "time": "歸還後",
-          "title": "Toyoko Inn Kyoto Biwako Otsu",
-          "description": "返回飯店入住、整理行李及休息。",
+          "time": "16:00",
+          "title": "大津港還車（最晚 16:30）",
+          "description": "目標 16:00 抵達 Biwako Rental Bike Shop 完成還車，取回大件寄放行李。店家 17:00 關門。",
+          "type": "transport",
+          "location": "Biwako Rental Bike Shop"
+        },
+        {
+          "time": "傍晚",
+          "title": "入住 Toyoko Inn Kyoto Biwako Otsu",
+          "description": "返飯店 Check-in，晚上大津市區自由活動與晚餐。",
           "type": "hotel",
           "location": "Toyoko Inn Kyoto Biwako Otsu"
         }
@@ -225,33 +310,145 @@
     },
     {
       "date": "2026-11-19",
-      "city": "大津 → 近江八幡 → 大津／返程",
-      "lodging": "依返程交通安排",
+      "city": "大津 → 近江八幡半日遊 → 大阪",
+      "lodging": "Quintessa Hotel Osaka Umeda Comic＆Books",
+      "items": [
+        {
+          "time": "08:30 - 09:00",
+          "title": "大津退房與行李寄放",
+          "description": "於大津站寄放行李（優先詢問 VIERRA Otsu 1F 觀光案內所，備選車站置物櫃）。",
+          "type": "transport",
+          "location": "Otsu Station"
+        },
+        {
+          "time": "約 09:00",
+          "title": "搭乘 JR 前往近江八幡",
+          "description": "搭乘 JR 火車前往近江八幡站。",
+          "type": "transport"
+        },
+        {
+          "time": "10:00 - 12:00",
+          "title": "八幡山纜車與日牟禮八幡宮、八幡堀",
+          "description": "搭乘八幡山纜車（來回約950日圓），參觀日牟禮八幡宮與八幡堀老街風貌。八幡堀遊船（和でん）視現場狀況彈性參加。",
+          "type": "activity",
+          "location": "Omihachiman / Hachimanbori"
+        },
+        {
+          "time": "12:15",
+          "title": "午餐：千成亭 八幡堀店 / Tiffany",
+          "description": "近江牛餐點候選，依當天候位與行程決定。",
+          "type": "food",
+          "location": "Sennaritei Omihachiman"
+        },
+        {
+          "time": "13:15 - 15:00",
+          "title": "近江商人街／新町通散步",
+          "description": "漫步近江商人歷史街區，約 15:00 返回近江八幡站搭車。",
+          "type": "activity",
+          "location": "Shinmachi-dori"
+        },
+        {
+          "time": "下午",
+          "title": "返回大津取行李並前往大阪",
+          "description": "JR 返回大津站取行李，轉乘火車前往大阪。",
+          "type": "transport"
+        },
+        {
+          "time": "傍晚",
+          "title": "入住 Quintessa Hotel Osaka Umeda Comic＆Books",
+          "description": "地址：大阪市北區鶴野町 2-15。辦理入住並自由活動。",
+          "type": "hotel",
+          "location": "Quintessa Hotel Osaka Umeda Comic＆Books"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "city": "大阪：上午參觀＋梅田購物",
+      "lodging": "Quintessa Hotel Osaka Umeda Comic＆Books",
       "items": [
         {
           "time": "上午",
-          "title": "退房與行李寄放",
-          "description": "目前傾向將行李寄放在大津站附近；出發前確認寄物地點、營業時間、尺寸限制及費用。",
+          "title": "景點參觀：大阪城公園／大阪歷史博物館",
+          "description": "走訪大阪城公園護城河或歷史博物館俯瞰城景。",
           "type": "activity",
-          "location": "Otsu Station"
+          "location": "Osaka Castle Park"
         },
         {
-          "time": "上午至下午",
-          "title": "近江八幡半日遊",
-          "description": "安排近江八幡半日行程，實際景點與交通時間待補。",
-          "type": "activity",
-          "location": "Omihachiman, Shiga, Japan"
+          "time": "11:15 - 12:00",
+          "title": "移動至梅田",
+          "description": "搭乘地鐵移動至梅田商圈。",
+          "type": "transport"
         },
         {
-          "time": "返程前",
-          "title": "返回大津領取行李",
-          "description": "依返程交通時間預留返回大津及領取行李的緩衝。",
+          "time": "中午",
+          "title": "午餐：MOS Burger (排球少年聯名)",
+          "description": "前往 MOS Burger（如 Whity Umeda 店）享用 MOS WAIWAI SET，確認第一波聯名贈品。",
+          "type": "food",
+          "location": "MOS Burger Whity Umeda"
+        },
+        {
+          "time": "下午",
+          "title": "梅田商圈購物",
+          "description": "逛 Grand Front Osaka 與 Grand Green Osaka。",
+          "type": "shopping",
+          "location": "Grand Front Osaka / Grand Green Osaka"
+        },
+        {
+          "time": "下午 / 晚上",
+          "title": "Alpen OSAKA 梅田旗艦店",
+          "description": "戶外運動用品採購，預留約 2.5 - 3 小時。",
+          "type": "shopping",
+          "location": "Alpen OSAKA Umeda"
+        },
+        {
+          "time": "傍晚 / 晚上",
+          "title": "梅田空中庭園展望台（備選）＆ 晚餐",
+          "description": "視天氣與體力決定是否上展望台看夜景。晚餐於梅田商圈自由選擇。",
+          "type": "activity",
+          "location": "Umeda Sky Building"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "city": "大阪 → 關西機場 → 返台",
+      "lodging": "無（返台）",
+      "items": [
+        {
+          "time": "07:30 - 08:45",
+          "title": "早餐與辦理退房",
+          "description": "早餐可選 THE CITY BAKERY 或便利商店。領取行李辦理退房。",
+          "type": "food"
+        },
+        {
+          "time": "08:45 - 09:15",
+          "title": "前往 JR 大阪站搭乘關空快速",
+          "description": "步行至 JR 大阪站搭乘關空快速前往關西機場 T1（車程約 65-70 分鐘，注意日根野站車廂分離指示）。",
           "type": "transport",
-          "location": "Otsu Station"
+          "location": "JR Osaka Station"
+        },
+        {
+          "time": "10:15 - 10:30",
+          "title": "抵達關西機場 T1 辦理海關退稅",
+          "description": "目標 10:30 前抵達。託運行李前先至海關完成 2026 新制退稅查驗確認。",
+          "type": "transport",
+          "location": "Kansai International Airport T1"
+        },
+        {
+          "time": "11:00 前後",
+          "title": "航空公司報到與託運",
+          "description": "分兩組班機報到：SL397 (2人, 預計13:40起飛) / CI153 (2人, 預計14:30起飛)。完成安檢出境。",
+          "type": "transport"
+        },
+        {
+          "time": "13:40 / 14:30",
+          "title": "搭機返台",
+          "description": "各自依電子機票登機門與時間搭機返台。",
+          "type": "transport"
         }
       ]
     }
   ],
-
-  "footer": "2026 琵琶湖單車旅行｜行程以最新 trip-data.json 為準。每日筆記及待辦勾選狀態儲存在目前使用的瀏覽器。"
+  "footer": "2026 琵琶湖自行車旅行＋大阪行程｜行程以最新 trip-data.json 為準。每日筆記及待辦勾選狀態儲存在目前使用的瀏覽器。"
 }
