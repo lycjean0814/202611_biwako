@@ -1,0 +1,257 @@
+{
+  "version": 2,
+  "trip_id": "202611_biwako",
+  "trip_name": "2026 琵琶湖單車旅行",
+  "subtitle": "11/15–11/19｜關西・琵琶湖",
+  "timezone": "Asia/Taipei",
+  "trip_start": "2026-11-15",
+  "trip_end": "2026-11-19",
+
+  "theme": {
+    "bg": "#f4f6f8",
+    "card": "#ffffff",
+    "text": "#1f2937",
+    "muted": "#6b7280",
+    "line": "#e5e7eb",
+    "accent": "#2563eb",
+    "accent_light": "#eff6ff",
+    "accent_dark": "#1d4ed8",
+    "header_bg": "#1f2937",
+    "header_text": "#ffffff",
+    "summary_bg": "#eff6ff",
+    "summary_border": "#dbeafe",
+    "theme_color": "#1f2937"
+  },
+
+  "summary": {
+    "title": "琵琶湖單車環湖之旅",
+    "description": "5 天 4 夜｜自行車旅行｜大津 → 長濱 → 高島 → 大津",
+    "highlights": [
+      "4 晚住宿",
+      "3 天單車騎乘",
+      "11/16 取車",
+      "11/18 還車"
+    ]
+  },
+
+  "flights": [
+    {
+      "date": "2026-11-15",
+      "flight": "VZ566",
+      "passenger_count": 2,
+      "note": "航班時間、起訖機場及航廈待補"
+    },
+    {
+      "date": "2026-11-15",
+      "flight": "BR132",
+      "passenger_count": 2,
+      "note": "航班時間、起訖機場及航廈待補"
+    }
+  ],
+
+  "todos": [
+    {
+      "id": "flight-details",
+      "title": "補齊兩班航班資訊",
+      "description": "確認 VZ566、BR132 的起降時間、機場及航廈"
+    },
+    {
+      "id": "rental-details",
+      "title": "確認自行車租借資訊",
+      "description": "確認租車店地址、車款、預約資料及取還車規則"
+    },
+    {
+      "id": "luggage-storage",
+      "title": "確認 11/19 大津站附近行李寄放",
+      "description": "確認觀光案內所或其他寄物服務的營業時間、尺寸限制、費用及可否寄放"
+    },
+    {
+      "id": "luggage-delivery",
+      "title": "確認行李配送安排",
+      "description": "確認大件行李寄送、各住宿收件規則及配送日期"
+    },
+    {
+      "id": "route-check",
+      "title": "確認三天騎乘路線與休息點",
+      "description": "補齊每日實際路線、里程、補給點及休息點"
+    },
+    {
+      "id": "restaurant-check",
+      "title": "整理沿途餐廳與補給選項",
+      "description": "補上各日早餐、午餐、晚餐及便利商店／超市資訊"
+    },
+    {
+      "id": "nov15-supermarket",
+      "title": "11/15 抵達大津後採買",
+      "description": "已列入行程規劃，確認當天抵達時間後安排採買"
+    }
+  ],
+
+  "days": [
+    {
+      "date": "2026-11-15",
+      "city": "關西空港 → 京都 → 大津",
+      "lodging": "Toyoko Inn Kyoto Biwako Otsu",
+      "items": [
+        {
+          "time": "抵達後",
+          "title": "關西空港集合與出境",
+          "description": "兩班航班：VZ566 2 人、BR132 2 人。依實際抵達時間會合。",
+          "type": "transport"
+        },
+        {
+          "time": "中午",
+          "title": "搭乘 Haruka 前往京都",
+          "description": "由關西空港搭乘 Haruka 前往京都，途中是否停留京都吃飯，視抵達時間與行李狀況決定。",
+          "type": "transport",
+          "location": "Kansai International Airport"
+        },
+        {
+          "time": "下午",
+          "title": "京都 → 大津",
+          "description": "抵達大津後前往飯店辦理入住或寄放行李。",
+          "type": "transport",
+          "location": "Toyoko Inn Kyoto Biwako Otsu"
+        },
+        {
+          "time": "入住後",
+          "title": "大津市區活動與晚餐",
+          "description": "安排採買、吃飯及隔日騎乘行李整理。",
+          "type": "activity",
+          "location": "Otsu, Shiga, Japan"
+        },
+        {
+          "time": "晚上",
+          "title": "超市採買",
+          "description": "採買隔日早餐、飲料、騎乘補給及所需用品。",
+          "type": "shopping"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "city": "大津 → 長濱",
+      "lodging": "Kitabiwako Hotel Grazie",
+      "items": [
+        {
+          "time": "取車前",
+          "title": "早餐",
+          "description": "取車前先吃完早餐。",
+          "type": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "租車取車",
+          "description": "已預約 09:00 取車。確認車況、配件及行李安排後出發。",
+          "type": "transport"
+        },
+        {
+          "time": "取車後",
+          "title": "大津 → 長濱單車騎乘",
+          "description": "依既定規劃騎至長濱住宿點。沿途里程、休息點及補給點待補入。",
+          "type": "cycling",
+          "location": "Otsu, Shiga, Japan"
+        },
+        {
+          "time": "抵達後",
+          "title": "Kitabiwako Hotel Grazie",
+          "description": "抵達長濱住宿點，辦理入住及休息。",
+          "type": "hotel",
+          "location": "Kitabiwako Hotel Grazie"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "city": "長濱 → 高島",
+      "lodging": "Imazu Sun Bridge Hotel",
+      "items": [
+        {
+          "time": "上午",
+          "title": "長濱出發",
+          "description": "早餐後整理裝備，依規劃路線出發。",
+          "type": "cycling",
+          "location": "Nagahama, Shiga, Japan"
+        },
+        {
+          "time": "白天",
+          "title": "長濱 → 高島單車騎乘",
+          "description": "今日目標為騎抵高島住宿點。里程、休息點及補給點待補入。",
+          "type": "cycling",
+          "location": "Takashima, Shiga, Japan"
+        },
+        {
+          "time": "抵達後",
+          "title": "Imazu Sun Bridge Hotel",
+          "description": "抵達住宿點，辦理入住及休息。",
+          "type": "hotel",
+          "location": "Imazu Sun Bridge Hotel"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "city": "高島 → 大津",
+      "lodging": "Toyoko Inn Kyoto Biwako Otsu",
+      "items": [
+        {
+          "time": "上午",
+          "title": "高島出發",
+          "description": "早餐後整理裝備，依規劃路線出發。",
+          "type": "cycling",
+          "location": "Takashima, Shiga, Japan"
+        },
+        {
+          "time": "白天",
+          "title": "高島 → 大津單車騎乘",
+          "description": "今日目標為騎回大津租車店。預留還車及整理裝備時間。",
+          "type": "cycling",
+          "location": "Otsu, Shiga, Japan"
+        },
+        {
+          "time": "16:30 左右",
+          "title": "自行車歸還",
+          "description": "營業時間至 17:00。請於關店前約 30 分鐘歸還車輛，避免壓線。",
+          "type": "transport"
+        },
+        {
+          "time": "歸還後",
+          "title": "Toyoko Inn Kyoto Biwako Otsu",
+          "description": "返回飯店入住、整理行李及休息。",
+          "type": "hotel",
+          "location": "Toyoko Inn Kyoto Biwako Otsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "city": "大津 → 近江八幡 → 大津／返程",
+      "lodging": "依返程交通安排",
+      "items": [
+        {
+          "time": "上午",
+          "title": "退房與行李寄放",
+          "description": "目前傾向將行李寄放在大津站附近；出發前確認寄物地點、營業時間、尺寸限制及費用。",
+          "type": "activity",
+          "location": "Otsu Station"
+        },
+        {
+          "time": "上午至下午",
+          "title": "近江八幡半日遊",
+          "description": "安排近江八幡半日行程，實際景點與交通時間待補。",
+          "type": "activity",
+          "location": "Omihachiman, Shiga, Japan"
+        },
+        {
+          "time": "返程前",
+          "title": "返回大津領取行李",
+          "description": "依返程交通時間預留返回大津及領取行李的緩衝。",
+          "type": "transport",
+          "location": "Otsu Station"
+        }
+      ]
+    }
+  ],
+
+  "footer": "2026 琵琶湖單車旅行｜行程以最新 trip-data.json 為準。每日筆記及待辦勾選狀態儲存在目前使用的瀏覽器。"
+}

@@ -1,0 +1,521 @@
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+  --accent-dark: #1d4ed8;
+
+  --header-bg: #1f2937;
+  --header-text: #ffffff;
+
+  --summary-bg: #eff6ff;
+  --summary-border: #dbeafe;
+
+  --food-bg: #fff7ed;
+  --food-text: #9a3412;
+
+  --transport-bg: #ecfeff;
+  --transport-text: #0f766e;
+
+  --hotel-bg: #f0fdf4;
+  --hotel-text: #166534;
+
+  --shadow: 0 3px 14px rgba(15, 23, 42, .08);
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Noto Sans TC",
+    "PingFang TC",
+    "Microsoft JhengHei",
+    sans-serif;
+  line-height: 1.55;
+}
+
+/* Header */
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  color: var(--header-text);
+  background: var(--header-bg);
+  padding: 14px 16px calc(12px + env(safe-area-inset-top));
+  backdrop-filter: blur(10px);
+}
+
+.header-inner {
+  max-width: 760px;
+  margin: auto;
+}
+
+.eyebrow {
+  margin: 0 0 3px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  opacity: .65;
+}
+
+.app-header h1 {
+  font-size: 20px;
+  margin: 0 0 3px;
+}
+
+.trip-subtitle {
+  font-size: 12px;
+  margin: 0;
+  color: rgba(255, 255, 255, .78);
+}
+
+/* Navigation */
+
+.day-nav {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 12px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 82px;
+  z-index: 15;
+  scrollbar-width: none;
+}
+
+.day-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.day-nav a {
+  flex: none;
+  text-decoration: none;
+  color: var(--text);
+  background: #f3f4f6;
+  border-radius: 999px;
+  padding: 6px 11px;
+  font-size: 12px;
+}
+
+.day-nav a.active {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+/* Main layout */
+
+.container {
+  max-width: 760px;
+  margin: auto;
+  padding: 12px 12px 70px;
+}
+
+.summary-card,
+.section-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+}
+
+.summary-card {
+  background: var(--summary-bg);
+  border-color: var(--summary-border);
+}
+
+.summary-card h2,
+.section-card h2 {
+  margin: 0 0 7px;
+  font-size: 17px;
+}
+
+.summary-card > p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.highlight {
+  display: inline-block;
+  background: rgba(255, 255, 255, .8);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 11px;
+}
+
+/* Flights */
+
+.flight-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.flight-card {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.flight-side {
+  min-width: 0;
+  text-align: center;
+}
+
+.flight-side strong {
+  display: block;
+  font-size: 17px;
+}
+
+.flight-side small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.flight-middle {
+  font-size: 16px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.flight-extra {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+  padding-top: 4px;
+  border-top: 1px dashed var(--line);
+}
+
+/* Section heading */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-count {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* Todos */
+
+.todo-list {
+  margin-top: 8px;
+}
+
+.todo-item {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.todo-item:last-child {
+  border-bottom: 0;
+}
+
+.todo-item input {
+  margin-top: 4px;
+  accent-color: var(--accent);
+  flex: none;
+}
+
+.todo-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.todo-title {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.todo-description {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.todo-item.done .todo-title {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+/* Day cards */
+
+.day {
+  background: var(--card);
+  border-radius: var(--radius);
+  margin: 12px 0;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  scroll-margin-top: 145px;
+}
+
+.day-head {
+  padding: 14px 15px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.day-title {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.day-title span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.day-title .lodging {
+  font-size: 11px;
+  color: var(--hotel-text);
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.day-badge {
+  font-size: 11px;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  padding: 4px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Timeline */
+
+.timeline {
+  padding: 4px 15px 12px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 62px 18px 1fr;
+  gap: 9px;
+  position: relative;
+  padding: 11px 0;
+}
+
+.item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 70px;
+  top: 28px;
+  bottom: -7px;
+  width: 1px;
+  background: var(--line);
+}
+
+.time {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 700;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin: 5px 0 0 4px;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--accent-light);
+}
+
+.content {
+  min-width: 0;
+}
+
+.content h3 {
+  font-size: 14px;
+  margin: 0 0 3px;
+}
+
+.content p {
+  font-size: 12px;
+  color: #4b5563;
+  margin: 3px 0;
+  white-space: pre-line;
+}
+
+.content a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed #9ca3af;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin: 4px 4px 2px 0;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.tag.food {
+  background: var(--food-bg);
+  color: var(--food-text);
+}
+
+.tag.transport {
+  background: var(--transport-bg);
+  color: var(--transport-text);
+}
+
+.tag.hotel {
+  background: var(--hotel-bg);
+  color: var(--hotel-text);
+}
+
+.tag.activity {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.item-actions a {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 5px 8px;
+  text-decoration: none;
+}
+
+/* Daily notes */
+
+.notes {
+  padding: 12px 15px;
+  border-top: 1px solid var(--line);
+  background: #fafafa;
+}
+
+.notes label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.notes textarea {
+  display: block;
+  width: 100%;
+  min-height: 76px;
+  margin-top: 7px;
+  padding: 9px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  resize: vertical;
+  font: inherit;
+  font-size: 12px;
+  background: var(--card);
+  color: var(--text);
+}
+
+/* Footer and buttons */
+
+footer {
+  padding: 20px 15px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.top-button {
+  position: fixed;
+  right: 15px;
+  bottom: 18px;
+  z-index: 30;
+  border: 0;
+  background: var(--header-bg);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.error-card {
+  background: #fff;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  border-radius: var(--radius);
+  padding: 16px;
+  margin: 14px 0;
+  font-size: 13px;
+}
+
+@media (min-width: 700px) {
+  .container {
+    padding-top: 20px;
+  }
+
+  .day-nav {
+    justify-content: center;
+  }
+
+  .day {
+    margin: 16px 0;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f2937">
+  <meta name="description" content="個人旅行行程規劃">
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icon.svg">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>旅行行程</title>
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <p class="eyebrow">TRAVEL ITINERARY</p>
+      <h1 id="trip-title">旅行行程</h1>
+      <p id="trip-subtitle" class="trip-subtitle"></p>
+    </div>
+  </header>
+
+  <nav class="day-nav" id="day-nav" aria-label="每日行程"></nav>
+
+  <main class="container">
+    <section class="summary-card">
+      <h2 id="summary-title">行程總覽</h2>
+      <p id="summary-description"></p>
+      <div id="summary-highlights" class="highlights"></div>
+      <div id="flights" class="flight-list"></div>
+    </section>
+
+    <section id="todos-section" class="section-card">
+      <div class="section-heading">
+        <h2>待辦事項</h2>
+        <span id="todo-progress" class="section-count"></span>
+      </div>
+      <div id="todos" class="todo-list"></div>
+    </section>
+
+    <div id="days"></div>
+
+    <footer id="app-footer">
+      行程資料以 trip-data.json 為準。
+    </footer>
+  </main>
+
+  <button
+    id="top-button"
+    class="top-button"
+    type="button"
+    aria-label="回到頁面頂端"
+  >↑</button>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
