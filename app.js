@@ -168,72 +168,6 @@ function renderHeader() {
     tripData.footer || "行程資料以 trip-data.json 為準。";
 }
 
-/* ---------- 航班 ---------- */
-
-function renderFlights() {
-  const flights = tripData.flights || [];
-  const root = $("#flights");
-
-  if (!flights.length) {
-    root.innerHTML = "";
-    return;
-  }
-
-  root.innerHTML = flights.map((flight) => {
-    const from = escapeHTML(flight.from || "—");
-    const to = escapeHTML(flight.to || "—");
-    const number = escapeHTML(flight.flight || "航班");
-    const date = flight.date
-      ? escapeHTML(formatDate(flight.date, { weekday: false }))
-      : "";
-
-    const departure = flight.departure
-      ? escapeHTML(flight.departure)
-      : "";
-
-    const arrival = flight.arrival
-      ? escapeHTML(flight.arrival)
-      : "";
-
-    const fromTerminal = flight.from_terminal
-      ? escapeHTML(flight.from_terminal)
-      : "";
-
-    const toTerminal = flight.to_terminal
-      ? escapeHTML(flight.to_terminal)
-      : "";
-
-    const extra = [
-      date,
-      number,
-      flight.passenger_count
-        ? `${escapeHTML(flight.passenger_count)} 人`
-        : "",
-      flight.note ? escapeHTML(flight.note) : ""
-    ].filter(Boolean).join("・");
-
-    return `
-      <div class="flight-card">
-        <div class="flight-side">
-          <strong>${from}</strong>
-          <small>${departure}</small>
-          <small>${fromTerminal}</small>
-        </div>
-
-        <div class="flight-middle">→</div>
-
-        <div class="flight-side">
-          <strong>${to}</strong>
-          <small>${arrival}</small>
-          <small>${toTerminal}</small>
-        </div>
-
-        <div class="flight-extra">${extra}</div>
-      </div>
-    `;
-  }).join("");
-}
-
 /* ---------- 待辦事項 ---------- */
 
 function renderTodos() {
@@ -301,6 +235,19 @@ function getMapUrl(item) {
   if (explicitUrl) return explicitUrl;
 
   const searchText = item.location || item.title;
+
+  if (!searchText) return "";
+
+  return "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent(searchText);
+}
+
+function getPlaceMapUrl(place) {
+  const explicitUrl = safeUrl(place.map_url);
+
+  if (explicitUrl) return explicitUrl;
+
+  const searchText = place.location || place.name;
 
   if (!searchText) return "";
 
@@ -378,8 +325,14 @@ function renderDay(day) {
 
     const mapUrl = getMapUrl(item);
     const typeTag = renderTag(item.type);
-
-    const actionLink = mapUrl
+    const placesList = Array.isArray(item.places) && item.places.length
+      ? '<ul class="place-list">' + item.places.map((place) => {
+          const url = getPlaceMapUrl(place);
+          const note = place.note ? ' — ' + escapeHTML(place.note) : '';
+          return '<li><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHTML(place.name) + '</a>' + note + '</li>';
+        }).join('') + '</ul>'
+      : '';
+    const actionLink = mapUrl && !item.places?.length
       ? `
         <div class="item-actions">
           <a
@@ -399,6 +352,7 @@ function renderDay(day) {
         ${item.description
           ? `<p>${escapeHTML(item.description)}</p>`
           : ""}
+        ${placesList}
         ${typeTag}
         ${actionLink}
       </div>
@@ -527,7 +481,6 @@ async function loadTrip() {
 
     applyTheme();
     renderHeader();
-    renderFlights();
     renderTodos();
     renderDays();
     setupPageActions();
