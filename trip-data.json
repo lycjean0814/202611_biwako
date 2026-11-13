@@ -40,28 +40,28 @@
       "flight": "VZ566",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "抵達關西機場（時間與航廈待核對）；乘客：詩詩、嘉進"
+      "note": "抵達關西機場（時間與航廈待核對）"
     },
     {
       "date": "2026-11-15",
       "flight": "BR132",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "抵達關西機場（時間與航廈待核對）；乘客：昱瑾、豐盛"
+      "note": "抵達關西機場（時間與航廈待核對）"
     },
     {
       "date": "2026-11-21",
       "flight": "SL397",
       "passenger_count": 2,
       "type": "departure",
-      "note": "Thai Lion Air（預計 13:40 起飛，以電子機票為準，T1）；乘客：昱瑾、嘉進"
+      "note": "Thai Lion Air（預計 13:40 起飛，以電子機票為準，T1）"
     },
     {
       "date": "2026-11-21",
       "flight": "CI153",
       "passenger_count": 2,
       "type": "departure",
-      "note": "China Airlines（預計 14:30 起飛，以電子機票為準，T1）；乘客：詩詩、豐盛"
+      "note": "China Airlines（預計 14:30 起飛，以電子機票為準，T1）"
     }
   ],
   "todos": [
@@ -125,7 +125,7 @@
         {
           "time": "中午",
           "title": "抵達關西機場與會合",
-          "description": "4 人分搭 VZ566 (2人) 與 BR132 (2人) 抵達關西機場，完成入境與領取行李後會合。",
+          "description": "4 人分搭 VZ566（詩詩、嘉進）與 BR132（昱瑾、豐盛）抵達關西機場，完成入境與領取行李後會合。",
           "type": "transport",
           "location": "Kansai International Airport"
         },
@@ -174,14 +174,31 @@
         {
           "time": "09:00",
           "title": "取車與行李寄放",
-          "description": "領取電輔車、確認車況與車燈配件，大件行李辦理店家寄放。",
+          "description": "租車預約編號：OTSU260920THS。車型尺寸：L × 1、M × 1、S × 2。領取電輔車、確認車況與車燈配件，大件行李辦理店家寄放。",
           "type": "cycling"
         },
         {
           "time": "09:20 - 12:00",
           "title": "沿琵琶湖湖岸北上騎乘",
           "description": "預計里程約 85-90 km（估值）。途經草津湖岸、野洲湖岸、守山湖岸休息拍照。",
-          "type": "cycling"
+          "type": "cycling",
+          "places": [
+            {
+              "name": "草津湖岸",
+              "note": "休息、拍照",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%8D%89%E6%B4%A5%E6%B9%96%E5%B2%B8%20Japan"
+            },
+            {
+              "name": "野洲湖岸",
+              "note": "休息、拍照",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%87%8E%E6%B4%B2%E6%B9%96%E5%B2%B8%20Japan"
+            },
+            {
+              "name": "守山湖岸",
+              "note": "休息、拍照",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AE%88%E5%B1%B1%E6%B9%96%E5%B2%B8%20Japan"
+            }
+          ]
         },
         {
           "time": "中午",
@@ -195,7 +212,19 @@
           "title": "參觀彥根城與玄宮園",
           "description": "必訪景點，預留 90-120 分鐘參觀古城與日式庭園。",
           "type": "activity",
-          "location": "Hikone Castle"
+          "location": "Hikone Castle",
+          "places": [
+            {
+              "name": "彥根城",
+              "note": "參觀古城",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%BD%A5%E6%A0%B9%E5%9F%8E%20Japan"
+            },
+            {
+              "name": "玄宮園",
+              "note": "參觀日式庭園",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%8E%84%E5%AE%AE%E5%9C%92%20Japan"
+            }
+          ]
         },
         {
           "time": "下午",
@@ -228,29 +257,82 @@
         {
           "time": "上午",
           "title": "沿途景點巡禮",
-          "description": "依序經過長浜豐公園（短停）、湖北水鳥公園、木之本宿散散步拍照。",
-          "type": "cycling"
+          "description": "依序停留以下景點，散步拍照。",
+          "type": "cycling",
+          "places": [
+            {
+              "name": "長浜豐公園",
+              "note": "短停",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E6%B5%9C%E8%B1%90%E5%85%AC%E5%9C%92%20Japan"
+            },
+            {
+              "name": "湖北水鳥公園",
+              "note": "散步、觀景",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B9%96%E5%8C%97%E6%B0%B4%E9%B3%A5%E5%85%AC%E5%9C%92%20Japan"
+            },
+            {
+              "name": "木之本宿",
+              "note": "老街散步、拍照",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%9C%A8%E4%B9%8B%E6%9C%AC%E5%AE%BF%20Japan"
+            }
+          ]
         },
         {
           "time": "中午前後",
           "title": "海津大崎湖岸短停與牧野午餐",
-          "description": "海津大崎僅至入口湖岸園地短停。午餐候選：なみ木食堂 ツバメ（日式定食）或 並木カフェ メタセコイア（輕食咖啡）。",
+          "description": "海津大崎至入口湖岸園地短停；午餐候選為なみ木食堂 ツバメ（日式定食）或並木カフェ メタセコイア（輕食咖啡）。",
           "type": "food",
-          "location": "Makino Pickland"
+          "location": "Makino Pickland",
+          "places": [
+            {
+              "name": "海津大崎",
+              "note": "入口湖岸園地短停",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E6%B4%A5%E5%A4%A7%E5%B4%8E%20Japan"
+            },
+            {
+              "name": "Makino Pickland",
+              "note": "牧野午餐區",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Makino%20Pickland%20Japan"
+            }
+          ]
         },
         {
           "time": "下午",
           "title": "水杉林道與大荒比古神社",
           "description": "水杉林道拍照（注意車道安全禁停），參觀賞楓景點大荒比古神社。",
           "type": "activity",
-          "location": "Metasequoia Namiki / Ohara Hiko Shrine"
+          "location": "Metasequoia Namiki / Ohara Hiko Shrine",
+          "places": [
+            {
+              "name": "メタセコイア並木（Metasequoia Namiki）",
+              "note": "水杉林道拍照；請勿在車道停留",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%A1%E3%82%BF%E3%82%BB%E3%82%B3%E3%82%A4%E3%82%A2%E4%B8%A6%E6%9C%A8%EF%BC%88Metasequoia%20Namiki%EF%BC%89%20Japan"
+            },
+            {
+              "name": "大荒比古神社",
+              "note": "參觀神社",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%8D%92%E6%AF%94%E5%8F%A4%E7%A5%9E%E7%A4%BE%20Japan"
+            }
+          ]
         },
         {
           "time": "傍晚",
           "title": "抵達高島陣舎入住",
           "description": "抵達高島市勝野 1330 辦理入住。若尚有體力可步行探索近江高島站周邊（大溝城跡、乙女ヶ池）。",
           "type": "hotel",
-          "location": "Takashima Jinya"
+          "location": "Takashima Jinya",
+          "places": [
+            {
+              "name": "大溝城跡",
+              "note": "近江高島站周邊散步",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E6%BA%9D%E5%9F%8E%E8%B7%A1%20Japan"
+            },
+            {
+              "name": "乙女ヶ池",
+              "note": "近江高島站周邊散步",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%99%E5%A5%B3%E3%83%B6%E6%B1%A0%20Japan"
+            }
+          ]
         }
       ]
     },
@@ -262,7 +344,7 @@
         {
           "time": "08:30",
           "title": "高島陣舎退房出發",
-          "description": "路線：高島陣舎 → 白鬚神社 → 近江舞子 → 浮御堂 → 大津港。舊估 55-65 km（起點變更需重算）。",
+          "description": "沿琵琶湖西岸南下，目標於 16:00 前抵達大津港；沿途景點與停靠點詳見下方行程項目。",
           "type": "cycling",
           "location": "Takashima Jinya"
         },
@@ -284,7 +366,19 @@
           "time": "中午",
           "title": "午餐：白鬚周邊餐廳",
           "description": "候選 1：白ひげ食堂（豚汁烏龍麵/拉麵/關東煮）；候選 2：白ひげ蕎麦（蕎麥麵/近江牛）。",
-          "type": "food"
+          "type": "food",
+          "places": [
+            {
+              "name": "白ひげ食堂",
+              "note": "豚汁、烏龍麵、拉麵或關東煮",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E3%81%B2%E3%81%92%E9%A3%9F%E5%A0%82%20Japan"
+            },
+            {
+              "name": "白ひげ蕎麦",
+              "note": "蕎麥麵或近江牛",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E3%81%B2%E3%81%92%E8%95%8E%E9%BA%A6%20Japan"
+            }
+          ]
         },
         {
           "time": "下午",
@@ -330,23 +424,64 @@
         {
           "time": "10:00 - 12:00",
           "title": "八幡山纜車與日牟禮八幡宮、八幡堀",
-          "description": "搭乘八幡山纜車（來回約950日圓），參觀日牟禮八幡宮與八幡堀老街風貌。八幡堀遊船（和でん）視現場狀況彈性參加。",
+          "description": "依序搭乘纜車並參觀神社、八幡堀；八幡堀遊船視現場狀況彈性參加。",
           "type": "activity",
-          "location": "Omihachiman / Hachimanbori"
+          "location": "Omihachiman / Hachimanbori",
+          "places": [
+            {
+              "name": "八幡山纜車",
+              "note": "搭乘纜車往返",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%B9%A1%E5%B1%B1%E7%BA%9C%E8%BB%8A%20Japan"
+            },
+            {
+              "name": "日牟禮八幡宮",
+              "note": "參觀神社",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E7%89%9F%E7%A6%AE%E5%85%AB%E5%B9%A1%E5%AE%AE%20Japan"
+            },
+            {
+              "name": "八幡堀",
+              "note": "散步；可視現場狀況搭乘和でん遊船",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%B9%A1%E5%A0%80%20Japan"
+            }
+          ]
         },
         {
           "time": "12:15",
           "title": "午餐：千成亭 八幡堀店 / Tiffany",
           "description": "近江牛餐點候選，依當天候位與行程決定。",
           "type": "food",
-          "location": "Sennaritei Omihachiman"
+          "location": "Sennaritei Omihachiman",
+          "places": [
+            {
+              "name": "千成亭 八幡堀店",
+              "note": "近江牛餐點候選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%83%E6%88%90%E4%BA%AD%20%E5%85%AB%E5%B9%A1%E5%A0%80%E5%BA%97%20Japan"
+            },
+            {
+              "name": "近江牛レストラン ティファニー（Tiffany）",
+              "note": "近江牛餐點候選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%BF%91%E6%B1%9F%E7%89%9B%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%20%E3%83%86%E3%82%A3%E3%83%95%E3%82%A1%E3%83%8B%E3%83%BC%EF%BC%88Tiffany%EF%BC%89%20Japan"
+            }
+          ]
         },
         {
           "time": "13:15 - 15:00",
           "title": "近江商人街／新町通散步",
           "description": "漫步近江商人歷史街區，約 15:00 返回近江八幡站搭車。",
           "type": "activity",
-          "location": "Shinmachi-dori"
+          "location": "Shinmachi-dori",
+          "places": [
+            {
+              "name": "近江商人街",
+              "note": "漫步歷史街區",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%BF%91%E6%B1%9F%E5%95%86%E4%BA%BA%E8%A1%97%20Japan"
+            },
+            {
+              "name": "新町通",
+              "note": "漫步歷史街區",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%94%BA%E9%80%9A%20Japan"
+            }
+          ]
         },
         {
           "time": "下午",
@@ -372,9 +507,21 @@
         {
           "time": "上午",
           "title": "景點參觀：大阪城公園／大阪歷史博物館",
-          "description": "走訪大阪城公園護城河或歷史博物館俯瞰城景。",
+          "description": "走訪公園護城河或至博物館俯瞰大阪城景。",
           "type": "activity",
-          "location": "Osaka Castle Park"
+          "location": "Osaka Castle Park",
+          "places": [
+            {
+              "name": "大阪城公園",
+              "note": "散步、欣賞護城河",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E5%9F%8E%E5%85%AC%E5%9C%92%20Japan"
+            },
+            {
+              "name": "大阪歷史博物館",
+              "note": "參觀展覽、俯瞰大阪城景",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E6%AD%B7%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8%20Japan"
+            }
+          ]
         },
         {
           "time": "11:15 - 12:00",
@@ -392,9 +539,21 @@
         {
           "time": "下午",
           "title": "梅田商圈購物",
-          "description": "逛 Grand Front Osaka 與 Grand Green Osaka。",
+          "description": "逛以下商場：",
           "type": "shopping",
-          "location": "Grand Front Osaka / Grand Green Osaka"
+          "location": "Grand Front Osaka / Grand Green Osaka",
+          "places": [
+            {
+              "name": "Grand Front Osaka",
+              "note": "商場購物",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Grand%20Front%20Osaka%20Japan"
+            },
+            {
+              "name": "Grand Green Osaka",
+              "note": "商場購物",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Grand%20Green%20Osaka%20Japan"
+            }
+          ]
         },
         {
           "time": "下午 / 晚上",
@@ -446,7 +605,7 @@
         {
           "time": "13:40 / 14:30",
           "title": "搭機返台",
-          "description": "各自依電子機票登機門與時間搭機返台。",
+          "description": "SL397：昱瑾、嘉進；CI153：詩詩、豐盛。各自依電子機票登機門與時間搭機返台。",
           "type": "transport"
         }
       ]
