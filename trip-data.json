@@ -26,7 +26,7 @@
     "description": "7 天 6 夜｜4人同行｜大津 → 長濱 → 高島 → 大津 → 近江八幡 → 大阪",
     "highlights": [
       "6 晚住宿",
-      "3 天電輔車環湖騎乘",
+      "11/16–18 騎乘預估 215–250 km",
       "11/16 大津港 09:00 取車",
       "11/18 16:00 大津港還車（最晚 16:30）",
       "11/19 近江八幡半日遊",
@@ -66,24 +66,9 @@
   ],
   "todos": [
     {
-      "id": "flight-details-arr",
-      "title": "11/15 入境航班資訊確認",
-      "description": "確認 VZ566、BR132 實際抵達時間、航廈、行李轉盤及會合地點"
-    },
-    {
       "id": "haruka-tickets",
       "title": "11/15 HARUKA 車票與中停規劃",
       "description": "確認 HARUKA 班次車票，並依抵達時間決定京都是否中停"
-    },
-    {
-      "id": "flight-details-dep",
-      "title": "11/21 返台航班資訊確認",
-      "description": "核對 SL397、CI153 電子機票實際起飛時間、航廈與報到截止時間"
-    },
-    {
-      "id": "kix-express",
-      "title": "11/21 JR 關空快速班次與退稅流程",
-      "description": "確認關空快速班次（目標 10:30 前抵達 KIX），並依 2026/11/1 新制了解海關退稅流程"
     },
     {
       "id": "bike-rental",
@@ -93,12 +78,12 @@
     {
       "id": "route-day2-recalc",
       "title": "11/17 Day 2 騎乘路線重算",
-      "description": "因住宿改為高島陣舎，需重新導航核算長濱至高島陣舎之實際里程與時間（粗估 85-95 km）"
+      "description": "依長濱 Airbnb 至高島陣舎的住宿點與景點順序估算，預估約 70–85 km；出發前再核對導航與路線安全。"
     },
     {
       "id": "route-day3-recalc",
       "title": "11/18 Day 3 騎乘路線與浮御堂確認",
-      "description": "重新導航高島陣舎出發至白鬚神社、近江舞子、浮御堂（必訪）、大津港之里程與時間，確認 16:00 前抵達"
+      "description": "依高島陣舎至大津住宿點，經白鬚神社、近江舞子、浮御堂估算約 55–65 km；目標於 16:00 前抵達大津港。"
     },
     {
       "id": "otsu-luggage-storage",
@@ -114,6 +99,11 @@
       "id": "mos-haikyu",
       "title": "11/20 MOS Burger 聯名與門市確認",
       "description": "確認 Whity Umeda 門市是否參與排球少年第一波聯名活動與贈品庫存"
+    },
+    {
+      "id": "kix-express",
+      "title": "11/21 JR 關空快速班次與退稅流程",
+      "description": "確認關空快速班次（目標 10:30 前抵達 KIX），並依 2026/11/1 新制了解海關退稅流程"
     }
   ],
   "days": [
@@ -144,6 +134,14 @@
           "location": "Toyoko Inn Kyoto Biwako Otsu"
         },
         {
+          "time": "傍晚",
+          "title": "逛 Workman 大津店",
+          "description": "在大津採買戶外服飾與騎乘用品。",
+          "type": "shopping",
+          "location": "Workman Otsu",
+          "map_url": "https://maps.app.goo.gl/iHkvVqFz27oqyGv28"
+        },
+        {
           "time": "晚上",
           "title": "超市採買與騎乘準備",
           "description": "至 Friend Mart 大津站前店或 Fresco 大津店採買飲水、運動飲料、補給品與隔日早餐。整理騎車用包款與手機車燈充電。",
@@ -160,9 +158,31 @@
         {
           "time": "07:00",
           "title": "外出早餐",
-          "description": "首選 MARKET Espresso & Vegetables，備選 Tea Room Sympathy / Coffee House Milestone / 喫茶ルンルン。",
+          "description": "早餐首選與備選餐廳：",
           "type": "food",
-          "location": "MARKET Espresso & Vegetables"
+          "location": "MARKET Espresso & Vegetables",
+          "places": [
+            {
+              "name": "MARKET Espresso & Vegetables",
+              "note": "首選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=MARKET%20Espresso%20%26%20Vegetables%20Japan"
+            },
+            {
+              "name": "Tea Room Sympathy",
+              "note": "備選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Tea%20Room%20Sympathy%20Japan"
+            },
+            {
+              "name": "Coffee House Milestone",
+              "note": "備選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Coffee%20House%20Milestone%20Japan"
+            },
+            {
+              "name": "喫茶ルンルン",
+              "note": "備選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6%E3%83%AB%E3%83%B3%E3%83%AB%E3%83%B3%20Japan"
+            }
+          ]
         },
         {
           "time": "08:00 - 08:30",
@@ -180,7 +200,7 @@
         {
           "time": "09:20 - 12:00",
           "title": "沿琵琶湖湖岸北上騎乘",
-          "description": "預計里程約 85-90 km（估值）。途經草津湖岸、野洲湖岸、守山湖岸休息拍照。",
+          "description": "本日預估總騎乘約 90–100 km，以大津住宿點為起點、長濱 Airbnb 為終點，含彥根、玄宮園等停留路線。上午沿湖岸北上，途經草津、野洲、守山一帶。",
           "type": "cycling",
           "places": [
             {
@@ -203,9 +223,21 @@
         {
           "time": "中午",
           "title": "午餐：近江牛（彥根夢京橋）",
-          "description": "首選「近江肉 せんなり亭 伽羅」（推薦近江牛和風肋眼牛排丼、壽喜燒），備選「近江牛レストラン 弥千代姫」。",
+          "description": "近江牛午餐候選：",
           "type": "food",
-          "location": "夢京橋城堡大道"
+          "location": "夢京橋城堡大道",
+          "places": [
+            {
+              "name": "近江肉 せんなり亭 伽羅",
+              "note": "首選；近江牛排丼、壽喜燒",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%BF%91%E6%B1%9F%E8%82%89%20%E3%81%9B%E3%82%93%E3%81%AA%E3%82%8A%E4%BA%AD%20%E4%BC%BD%E7%BE%85%20Japan"
+            },
+            {
+              "name": "近江牛レストラン 弥千代姫",
+              "note": "備選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%BF%91%E6%B1%9F%E7%89%9B%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%20%E5%BC%A5%E5%8D%83%E4%BB%A3%E5%A7%AB%20Japan"
+            }
+          ]
         },
         {
           "time": "午後",
@@ -250,7 +282,7 @@
         {
           "time": "08:00 - 08:30",
           "title": "早餐與退房出發",
-          "description": "長浜出發，粗估里程約 85-95 km（需依新住宿重新核算）。",
+          "description": "從長濱 Airbnb 出發，經木之本、海津大崎、牧野、水杉林道與大荒比古神社，抵達高島陣舎；本日預估總騎乘約 70–85 km。",
           "type": "cycling",
           "location": "Nagahama"
         },
@@ -279,20 +311,32 @@
         },
         {
           "time": "中午前後",
-          "title": "海津大崎湖岸短停與牧野午餐",
-          "description": "海津大崎至入口湖岸園地短停；午餐候選為なみ木食堂 ツバメ（日式定食）或並木カフェ メタセコイア（輕食咖啡）。",
-          "type": "food",
-          "location": "Makino Pickland",
+          "title": "海津大崎湖岸短停",
+          "description": "前往入口湖岸園地短停、拍照。",
+          "type": "activity",
           "places": [
             {
               "name": "海津大崎",
               "note": "入口湖岸園地短停",
               "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E6%B4%A5%E5%A4%A7%E5%B4%8E%20Japan"
+            }
+          ]
+        },
+        {
+          "time": "中午前後",
+          "title": "午餐：牧野一帶",
+          "description": "午餐餐廳候選：",
+          "type": "food",
+          "places": [
+            {
+              "name": "なみ木食堂 ツバメ",
+              "note": "日式定食",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%AA%E3%81%BF%E6%9C%A8%E9%A3%9F%E5%A0%82%20%E3%83%84%E3%83%90%E3%83%A1%20Japan"
             },
             {
-              "name": "Makino Pickland",
-              "note": "牧野午餐區",
-              "map_url": "https://www.google.com/maps/search/?api=1&query=Makino%20Pickland%20Japan"
+              "name": "並木カフェ メタセコイア",
+              "note": "輕食、咖啡",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%A6%E6%9C%A8%E3%82%AB%E3%83%95%E3%82%A7%20%E3%83%A1%E3%82%BF%E3%82%BB%E3%82%B3%E3%82%A4%E3%82%A2%20Japan"
             }
           ]
         },
@@ -349,7 +393,7 @@
         {
           "time": "08:30",
           "title": "高島陣舎退房出發",
-          "description": "沿琵琶湖西岸南下，目標於 16:00 前抵達大津港；沿途景點與停靠點詳見下方行程項目。",
+          "description": "從高島陣舎出發，經白鬚神社、近江舞子、浮御堂後返回大津住宿點；本日預估總騎乘約 55–65 km，目標於 16:00 前抵達大津港還車。",
           "type": "cycling",
           "location": "Takashima Jinya"
         },
@@ -370,7 +414,7 @@
         {
           "time": "中午",
           "title": "午餐：白鬚周邊餐廳",
-          "description": "候選 1：白ひげ食堂（豚汁烏龍麵/拉麵/關東煮）；候選 2：白ひげ蕎麦（蕎麥麵/近江牛）。",
+          "description": "午餐餐廳候選：",
           "type": "food",
           "places": [
             {
@@ -453,7 +497,7 @@
         {
           "time": "12:15",
           "title": "午餐：千成亭 八幡堀店 / Tiffany",
-          "description": "近江牛餐點候選，依當天候位與行程決定。",
+          "description": "近江牛午餐餐廳候選：",
           "type": "food",
           "location": "Sennaritei Omihachiman",
           "places": [
@@ -537,7 +581,7 @@
         {
           "time": "中午",
           "title": "午餐：MOS Burger (排球少年聯名)",
-          "description": "前往 MOS Burger（如 Whity Umeda 店）享用 MOS WAIWAI SET，確認第一波聯名贈品。",
+          "description": "前往 Whity Umeda 店享用 MOS WAIWAI SET，並確認聯名贈品。",
           "type": "food",
           "location": "MOS Burger Whity Umeda"
         },
@@ -561,6 +605,29 @@
           ]
         },
         {
+          "time": "下午",
+          "title": "梅田玩具與扭蛋店巡逛",
+          "description": "梅田站周邊玩具與扭蛋店，可依興趣擇店逛訪。",
+          "type": "shopping",
+          "places": [
+            {
+              "name": "Kiddy Land 大阪梅田店",
+              "note": "玩具、角色雜貨；阪急三番街北館，10:00–21:00",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Kiddy%20Land%20Osaka%20Umeda%20Japan"
+            },
+            {
+              "name": "GASHAPON BANDAI OFFICIAL SHOP 梅田店",
+              "note": "約 450 面；OSビル 1F，10:00–24:00",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=GASHAPON%20BANDAI%20OFFICIAL%20SHOP%20Umeda%20OS%20Building%20Japan"
+            },
+            {
+              "name": "ガシャポンのデパート HEP FIVE店",
+              "note": "HEP FIVE 8–9F，11:00–22:30",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Gashapon%20Department%20Store%20HEP%20FIVE%20Osaka%20Japan"
+            }
+          ]
+        },
+        {
           "time": "下午 / 晚上",
           "title": "Alpen OSAKA 梅田旗艦店",
           "description": "戶外運動用品採購，預留約 2.5 - 3 小時。",
@@ -570,9 +637,31 @@
         {
           "time": "傍晚 / 晚上",
           "title": "梅田空中庭園展望台（備選）＆ 晚餐",
-          "description": "視天氣與體力決定是否上展望台看夜景。晚餐於梅田商圈自由選擇。",
+          "description": "若不前往展望台，可從以下大阪餐廳地圖連結選擇晚餐：",
           "type": "activity",
-          "location": "Umeda Sky Building"
+          "location": "Umeda Sky Building",
+          "places": [
+            {
+              "name": "大阪餐廳 1",
+              "note": "你提供的 Google Maps 地圖連結",
+              "map_url": "https://maps.app.goo.gl/i9E5uBELkdQJ5hPd7"
+            },
+            {
+              "name": "大阪餐廳 2",
+              "note": "你提供的 Google Maps 地圖連結",
+              "map_url": "https://maps.app.goo.gl/jLhgZgae7ifLBdfj7"
+            },
+            {
+              "name": "大阪餐廳 3",
+              "note": "你提供的 Google Maps 地圖連結",
+              "map_url": "https://maps.app.goo.gl/pUUgSqQbn37bt1CBA"
+            },
+            {
+              "name": "大阪餐廳 4",
+              "note": "你提供的 Google Maps 地圖連結",
+              "map_url": "https://maps.app.goo.gl/2BrkQsSYwXWDpaFc9"
+            }
+          ]
         }
       ]
     },
