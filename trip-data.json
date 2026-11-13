@@ -40,28 +40,28 @@
       "flight": "VZ566",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "抵達關西機場（時間與航廈待核對）"
+      "note": "抵達關西機場（時間與航廈待核對）；乘客：詩詩、嘉進"
     },
     {
       "date": "2026-11-15",
       "flight": "BR132",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "抵達關西機場（時間與航廈待核對）"
+      "note": "抵達關西機場（時間與航廈待核對）；乘客：昱瑾、豐盛"
     },
     {
       "date": "2026-11-21",
       "flight": "SL397",
       "passenger_count": 2,
       "type": "departure",
-      "note": "Thai Lion Air（預計 13:40 起飛，以電子機票為準，T1）"
+      "note": "Thai Lion Air（預計 13:40 起飛，以電子機票為準，T1）；乘客：昱瑾、嘉進"
     },
     {
       "date": "2026-11-21",
       "flight": "CI153",
       "passenger_count": 2,
       "type": "departure",
-      "note": "China Airlines（預計 14:30 起飛，以電子機票為準，T1）"
+      "note": "China Airlines（預計 14:30 起飛，以電子機票為準，T1）；乘客：詩詩、豐盛"
     }
   ],
   "todos": [
@@ -120,7 +120,7 @@
     {
       "date": "2026-11-15",
       "city": "關西機場 → 京都 → 大津",
-      "lodging": "Toyoko Inn Kyoto Biwako Otsu",
+      "lodging": "Toyoko Inn Kyoto Biwako Otsu（Agoda）",
       "items": [
         {
           "time": "中午",
@@ -155,7 +155,7 @@
     {
       "date": "2026-11-16",
       "city": "自行車 Day 1：大津 → 彥根 → 長浜",
-      "lodging": "Kitabiwako Hotel Grazie",
+      "lodging": "Airbnb（Airbnb）",
       "items": [
         {
           "time": "07:00",
@@ -205,17 +205,18 @@
         },
         {
           "time": "17:30",
-          "title": "抵達 Kitabiwako Hotel Grazie 入住",
-          "description": "目標 17:30 前抵達飯店辦理入住，注意日落後騎乘前後燈使用。",
+          "title": "抵達 Airbnb 入住",
+          "description": "抵達 Airbnb 辦理入住。",
           "type": "hotel",
-          "location": "Kitabiwako Hotel Grazie"
+          "location": "Airbnb",
+          "map_url": "https://maps.app.goo.gl/qAi32BVJ2U883dYk8"
         }
       ]
     },
     {
       "date": "2026-11-17",
       "city": "自行車 Day 2：長浜 → 高島",
-      "lodging": "高島陣舎（Takashima Jinya）",
+      "lodging": "高島陣舎（Takashima Jinya）（Booking）",
       "items": [
         {
           "time": "08:00 - 08:30",
@@ -256,7 +257,7 @@
     {
       "date": "2026-11-18",
       "city": "自行車 Day 3：高島 → 大津",
-      "lodging": "Toyoko Inn Kyoto Biwako Otsu",
+      "lodging": "Toyoko Inn Kyoto Biwako Otsu（Agoda）",
       "items": [
         {
           "time": "08:30",
@@ -311,7 +312,7 @@
     {
       "date": "2026-11-19",
       "city": "大津 → 近江八幡半日遊 → 大阪",
-      "lodging": "Quintessa Hotel Osaka Umeda Comic＆Books",
+      "lodging": "BON Condominium Umeda（Agoda）",
       "items": [
         {
           "time": "08:30 - 09:00",
@@ -355,17 +356,18 @@
         },
         {
           "time": "傍晚",
-          "title": "入住 Quintessa Hotel Osaka Umeda Comic＆Books",
-          "description": "地址：大阪市北區鶴野町 2-15。辦理入住並自由活動。",
+          "title": "入住 BON Condominium Umeda",
+          "description": "前往 BON Condominium Umeda 辦理入住。",
           "type": "hotel",
-          "location": "Quintessa Hotel Osaka Umeda Comic＆Books"
+          "location": "BON Condominium Umeda",
+          "map_url": "https://maps.app.goo.gl/BDJsu51fwn4mY5JF7"
         }
       ]
     },
     {
       "date": "2026-11-20",
       "city": "大阪：上午參觀＋梅田購物",
-      "lodging": "Quintessa Hotel Osaka Umeda Comic＆Books",
+      "lodging": "BON Condominium Umeda（Agoda）",
       "items": [
         {
           "time": "上午",
@@ -438,7 +440,7 @@
         {
           "time": "11:00 前後",
           "title": "航空公司報到與託運",
-          "description": "分兩組班機報到：SL397 (2人, 預計13:40起飛) / CI153 (2人, 預計14:30起飛)。完成安檢出境。",
+          "description": "分兩組班機報到：SL397（昱瑾、嘉進，預計 13:40 起飛）／CI153（詩詩、豐盛，預計 14:30 起飛）。完成安檢出境。",
           "type": "transport"
         },
         {
