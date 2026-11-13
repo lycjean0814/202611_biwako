@@ -588,7 +588,14 @@
           "title": "午餐：MOS Burger (排球少年聯名)",
           "description": "前往 Whity Umeda 店享用 MOS WAIWAI SET，並確認聯名贈品。",
           "type": "food",
-          "location": "MOS Burger Whity Umeda"
+          "location": "MOS Burger Whity Umeda",
+          "places": [
+            {
+              "name": "MOS Burger Whity Umeda 店",
+              "note": "MOS WAIWAI SET、確認聯名贈品",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=MOS%20Burger%20Whity%20Umeda%20Osaka"
+            }
+          ]
         },
         {
           "time": "下午",
