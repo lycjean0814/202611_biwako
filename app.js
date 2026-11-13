@@ -185,6 +185,10 @@ function renderTodos() {
   root.innerHTML = todos.map((todo, index) => {
     const id = todo.id || `todo-${index}`;
     const checked = loadTodoStatus(id, todo.done === true);
+    const todoUrl = safeUrl(todo.url);
+    const todoLink = todoUrl
+      ? `<a class="todo-link" href="${escapeHTML(todoUrl)}" target="_blank" rel="noopener noreferrer">${escapeHTML(todo.link_label || "開啟連結 ↗")}</a>`
+      : "";
 
     return `
       <label class="todo-item ${checked ? "done" : ""}">
@@ -198,6 +202,7 @@ function renderTodos() {
           ${todo.description
             ? `<span class="todo-description">${escapeHTML(todo.description)}</span>`
             : ""}
+          ${todoLink}
         </span>
       </label>
     `;
