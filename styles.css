@@ -394,6 +394,17 @@ body {
   border-bottom: 1px dashed #9ca3af;
 }
 
+.place-list {
+  margin: 6px 0;
+  padding-left: 18px;
+  color: #4b5563;
+  font-size: 12px;
+}
+
+.place-list li + li {
+  margin-top: 4px;
+}
+
 .tag {
   display: inline-block;
   font-size: 10px;
