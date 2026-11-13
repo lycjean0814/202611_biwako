@@ -329,6 +329,11 @@
           "type": "food",
           "places": [
             {
+              "name": "Makino Pickland",
+              "note": "午餐與周邊休息區",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Makino%20Pickland%20Japan"
+            },
+            {
               "name": "なみ木食堂 ツバメ",
               "note": "日式定食",
               "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%AA%E3%81%BF%E6%9C%A8%E9%A3%9F%E5%A0%82%20%E3%83%84%E3%83%90%E3%83%A1%20Japan"
@@ -642,6 +647,11 @@
           "location": "Umeda Sky Building",
           "places": [
             {
+              "name": "梅田空中庭園展望台",
+              "note": "晚餐前後可選擇登頂看夜景",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Umeda%20Sky%20Building%20Japan"
+            },
+            {
               "name": "大阪餐廳 1",
               "note": "你提供的 Google Maps 地圖連結",
               "map_url": "https://maps.app.goo.gl/i9E5uBELkdQJ5hPd7"
@@ -673,8 +683,20 @@
         {
           "time": "07:30 - 08:45",
           "title": "早餐與辦理退房",
-          "description": "早餐可選 THE CITY BAKERY 或便利商店。領取行李辦理退房。",
-          "type": "food"
+          "description": "早餐可選 THE CITY BAKERY 梅田店或住宿附近便利商店；領取行李後辦理退房。",
+          "type": "food",
+          "places": [
+            {
+              "name": "THE CITY BAKERY 梅田店",
+              "note": "早餐",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=THE%20CITY%20BAKERY%20Umeda%20Osaka%20Japan"
+            },
+            {
+              "name": "住宿附近便利商店",
+              "note": "早餐備選",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=convenience%20store%20near%20BON%20Condominium%20Umeda%20Osaka%20Japan"
+            }
+          ]
         },
         {
           "time": "08:45 - 09:15",
