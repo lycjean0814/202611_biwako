@@ -387,6 +387,13 @@
               "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%99%E5%A5%B3%E3%83%B6%E6%B1%A0%20Japan"
             }
           ]
+        },
+        {
+          "time": "晚餐",
+          "title": "高島陣舎加購晚餐",
+          "description": "詩詩、嘉進：魚飯；昱瑾、豐盛：魚飯。",
+          "type": "food",
+          "location": "Takashima Jinya"
         }
       ]
     },
@@ -395,6 +402,14 @@
       "city": "自行車 Day 3：高島 → 大津",
       "lodging": "Toyoko Inn Kyoto Biwako Otsu（Agoda）",
       "items": [
+        {
+          "time": "早餐",
+          "title": "Blue.taco 早餐",
+          "description": "詩詩、嘉進：飯糰；昱瑾、豐盛：墨西哥捲餅。",
+          "type": "food",
+          "location": "Blue.taco",
+          "map_url": "https://maps.app.goo.gl/WJWLY4WoHqRHFCge8"
+        },
         {
           "time": "08:30",
           "title": "高島陣舎退房出發",
@@ -659,22 +674,22 @@
               "map_url": "https://www.google.com/maps/search/?api=1&query=Umeda%20Sky%20Building%20Japan"
             },
             {
-              "name": "大阪餐廳 1",
+              "name": "燃えよ麺助",
               "note": "你提供的 Google Maps 地圖連結",
               "map_url": "https://maps.app.goo.gl/i9E5uBELkdQJ5hPd7"
             },
             {
-              "name": "大阪餐廳 2",
+              "name": "Kohaku Lucua Osaka",
               "note": "你提供的 Google Maps 地圖連結",
               "map_url": "https://maps.app.goo.gl/jLhgZgae7ifLBdfj7"
             },
             {
-              "name": "大阪餐廳 3",
+              "name": "中華そば 桐麺",
               "note": "你提供的 Google Maps 地圖連結",
               "map_url": "https://maps.app.goo.gl/pUUgSqQbn37bt1CBA"
             },
             {
-              "name": "大阪餐廳 4",
+              "name": "麦と麺助",
               "note": "你提供的 Google Maps 地圖連結",
               "map_url": "https://maps.app.goo.gl/2BrkQsSYwXWDpaFc9"
             }
