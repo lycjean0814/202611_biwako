@@ -323,6 +323,11 @@
           "location": "Takashima Jinya",
           "places": [
             {
+              "name": "高島陣舎（Takashima Jinya）",
+              "note": "住宿地點",
+              "map_url": "https://www.google.com/maps/search/?api=1&query=Takashima%20Jinya%20Japan"
+            },
+            {
               "name": "大溝城跡",
               "note": "近江高島站周邊散步",
               "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E6%BA%9D%E5%9F%8E%E8%B7%A1%20Japan"
