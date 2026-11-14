@@ -130,24 +130,14 @@
       "link_label": "報名／選擇路線 ↗"
     },
     {
-      "id": "route-day2-recalc",
-      "title": "11/17 Day 2 騎乘路線重算",
-      "description": "依長濱 Airbnb 至高島陣舎的住宿點與景點順序估算，預估約 70–85 km；出發前再核對導航與路線安全。"
-    },
-    {
-      "id": "route-day3-recalc",
-      "title": "11/18 Day 3 騎乘路線與浮御堂確認",
-      "description": "依高島陣舎至大津住宿點，經白鬚神社、近江舞子、浮御堂估算約 55–65 km；目標於 16:00 前抵達大津港。"
+      "id": "otsu-dinner-reservation",
+      "title": "11/18 近江牛晚餐訂位",
+      "description": "預約近江 かど萬晚餐，確認 4 人用餐時段與營業狀況。"
     },
     {
       "id": "otsu-luggage-storage",
       "title": "11/19 大津站行李寄放確認",
       "description": "確認大津站觀光案內所或大型置物櫃之件數、尺寸限制、費用及取件時間"
-    },
-    {
-      "id": "omihachiman-sightseeing",
-      "title": "11/19 八幡山纜車與遊船檢修確認",
-      "description": "確認八幡山纜車 11/19 是否檢修停駛及八幡堀遊船營運狀態"
     },
     {
       "id": "mos-haikyu",
