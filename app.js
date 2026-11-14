@@ -183,12 +183,14 @@ function renderFlights() {
   section.hidden = false;
   root.innerHTML = flights.map((flight) => {
     const isArrival = flight.type === "arrival";
-    const leftLabel = isArrival
-      ? "起飛 · 台灣時間"
-      : `關西機場${flight.terminal ? ` ${flight.terminal}` : ""} · 日本時間`;
-    const rightLabel = isArrival
-      ? "關西機場 · 日本時間"
-      : "抵達 · 台灣時間";
+    const departureTerminal = flight.departure_terminal
+      ? ` (${flight.departure_terminal})`
+      : "";
+    const arrivalTerminal = flight.arrival_terminal
+      ? ` (${flight.arrival_terminal})`
+      : "";
+    const leftLabel = `${flight.departure_airport || (isArrival ? "起飛" : "關西機場")}${departureTerminal} · ${isArrival ? "台灣時間" : "日本時間"}`;
+    const rightLabel = `${flight.arrival_airport || (isArrival ? "關西機場" : "抵達")}${arrivalTerminal} · ${isArrival ? "日本時間" : "台灣時間"}`;
     const passengers = Array.isArray(flight.passengers)
       ? flight.passengers.join("、")
       : `${flight.passenger_count || 0} 人`;
