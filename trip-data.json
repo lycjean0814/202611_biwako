@@ -40,28 +40,28 @@
       "flight": "VZ566",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "抵達關西機場（時間與航廈待核對）"
+      "note": "起飛 07:15、抵達關西機場 10:45（以電子機票為準）"
     },
     {
       "date": "2026-11-15",
       "flight": "BR132",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "抵達關西機場（時間與航廈待核對）"
+      "note": "起飛 08:20、抵達關西機場 11:55（以電子機票為準）"
     },
     {
       "date": "2026-11-21",
       "flight": "SL397",
       "passenger_count": 2,
       "type": "departure",
-      "note": "Thai Lion Air（預計 13:40 起飛，以電子機票為準，T1）"
+      "note": "Thai Lion Air｜起飛 13:40、抵達 15:40（以電子機票為準，T1）"
     },
     {
       "date": "2026-11-21",
       "flight": "CI153",
       "passenger_count": 2,
       "type": "departure",
-      "note": "China Airlines（預計 14:30 起飛，以電子機票為準，T1）"
+      "note": "China Airlines｜起飛 14:30、抵達 16:50（以電子機票為準，T1）"
     }
   ],
   "todos": [
@@ -81,6 +81,13 @@
       "id": "bike-rental",
       "title": "11/16 租車與行李寄放確認",
       "description": "確認大津港 09:00 取車預約、電輔車配件（車燈/鎖具/反光）及行李加購寄放"
+    },
+    {
+      "id": "biwaichi-stamp-rally",
+      "title": "11/16 報名數位集章活動",
+      "description": "手機報名並選擇集章路線，騎行時開啟定位。",
+      "url": "https://platinumaps.jp/d/cyclingrally2026?sr=1916",
+      "link_label": "報名／選擇路線 ↗"
     },
     {
       "id": "route-day2-recalc",
@@ -331,6 +338,44 @@
           "type": "hotel",
           "location": "Airbnb",
           "map_url": "https://maps.app.goo.gl/qAi32BVJ2U883dYk8"
+        },
+        {
+          "time": "晚餐",
+          "title": "長濱晚餐推薦",
+          "description": "抵達 Airbnb 入住後，依體力、營業狀況與是否需訂位選擇；步行時間依住宿點資訊估算。長浜の縄室內可吸菸，請留意。",
+          "type": "food",
+          "places": [
+            {
+              "name": "長浜の縄",
+              "note": "步行約 15 分｜居酒屋、創作料理與甜點；室內可吸菸",
+              "map_url": "https://maps.app.goo.gl/MfS6bQDvCoLLTZ7s9"
+            },
+            {
+              "name": "みたに",
+              "note": "步行約 6 分｜人氣蕎麥麵店；不是伊吹蕎麥",
+              "map_url": "https://maps.app.goo.gl/necN5pPkjHLNeDx56"
+            },
+            {
+              "name": "割烹 能登",
+              "note": "步行約 6 分｜居酒屋，可吃魚介、鄉土料理與琵琶湖食材",
+              "map_url": "https://maps.app.goo.gl/oiX85oKhcqJL8yAF7"
+            },
+            {
+              "name": "成駒屋",
+              "note": "步行約 6 分｜有長濱鄉土料理鯖そうめん",
+              "map_url": "https://maps.app.goo.gl/r497cyhjXdSjZtsXA"
+            },
+            {
+              "name": "京極寿司",
+              "note": "步行約 15 分｜可試鯖棒壽司",
+              "map_url": "https://maps.app.goo.gl/EozbBFoutYNuky1Y7"
+            },
+            {
+              "name": "長浜浪漫ビール",
+              "note": "步行約 5 分",
+              "map_url": "https://maps.app.goo.gl/ytirRfLJDmhfKcQeA"
+            }
+          ]
         }
       ]
     },
@@ -529,6 +574,14 @@
           "description": "返飯店 Check-in，晚上大津市區自由活動與晚餐。",
           "type": "hotel",
           "location": "Toyoko Inn Kyoto Biwako Otsu"
+        },
+        {
+          "time": "晚餐",
+          "title": "晚餐首選：近江 かど萬",
+          "description": "騎行返回大津、入住後的晚餐首選；建議先確認營業時間並預約。",
+          "type": "food",
+          "location": "近江 かど萬",
+          "map_url": "https://maps.app.goo.gl/3WvAppHMK2jQJmEp7"
         }
       ]
     },
@@ -611,6 +664,14 @@
               "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%94%BA%E9%80%9A%20Japan"
             }
           ]
+        },
+        {
+          "time": "下午（返大津取行李前）",
+          "title": "La Collina 近江八幡",
+          "description": "造訪 La Collina；請把往返交通與停留時間納入近江八幡站出發時間，並先確認當日營業狀況。",
+          "type": "activity",
+          "location": "La Collina",
+          "map_url": "https://maps.app.goo.gl/BSjTdvXDLzs2ay5b9"
         },
         {
           "time": "下午",
