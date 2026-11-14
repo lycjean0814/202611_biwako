@@ -40,28 +40,54 @@
       "flight": "VZ566",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "起飛 07:15、抵達關西機場 10:45（以電子機票為準）"
+      "note": "以電子機票為準",
+      "passengers": [
+        "詩詩",
+        "嘉進"
+      ],
+      "departure_time": "07:15",
+      "arrival_time": "10:45"
     },
     {
       "date": "2026-11-15",
       "flight": "BR132",
       "passenger_count": 2,
       "type": "arrival",
-      "note": "起飛 08:20、抵達關西機場 11:55（以電子機票為準）"
+      "note": "以電子機票為準",
+      "passengers": [
+        "昱瑾",
+        "豐盛"
+      ],
+      "departure_time": "08:20",
+      "arrival_time": "11:55"
     },
     {
       "date": "2026-11-21",
       "flight": "SL397",
       "passenger_count": 2,
       "type": "departure",
-      "note": "Thai Lion Air｜起飛 13:40、抵達 15:40（以電子機票為準，T1）"
+      "note": "Thai Lion Air（以電子機票為準）",
+      "passengers": [
+        "昱瑾",
+        "嘉進"
+      ],
+      "departure_time": "13:40",
+      "arrival_time": "15:40",
+      "terminal": "T1"
     },
     {
       "date": "2026-11-21",
       "flight": "CI153",
       "passenger_count": 2,
       "type": "departure",
-      "note": "China Airlines｜起飛 14:30、抵達 16:50（以電子機票為準，T1）"
+      "note": "China Airlines（以電子機票為準）",
+      "passengers": [
+        "詩詩",
+        "豐盛"
+      ],
+      "departure_time": "14:30",
+      "arrival_time": "16:50",
+      "terminal": "T1"
     }
   ],
   "todos": [
