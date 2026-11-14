@@ -168,6 +168,53 @@ function renderHeader() {
     tripData.footer || "行程資料以 trip-data.json 為準。";
 }
 
+/* ---------- 航班資訊 ---------- */
+
+function renderFlights() {
+  const flights = Array.isArray(tripData.flights) ? tripData.flights : [];
+  const root = $("#flights");
+  const section = $("#flights-section");
+
+  if (!flights.length) {
+    section.hidden = true;
+    return;
+  }
+
+  section.hidden = false;
+  root.innerHTML = flights.map((flight) => {
+    const isArrival = flight.type === "arrival";
+    const leftLabel = isArrival
+      ? "起飛 · 台灣時間"
+      : `關西機場${flight.terminal ? ` ${flight.terminal}` : ""} · 日本時間`;
+    const rightLabel = isArrival
+      ? "關西機場 · 日本時間"
+      : "抵達 · 台灣時間";
+    const passengers = Array.isArray(flight.passengers)
+      ? flight.passengers.join("、")
+      : `${flight.passenger_count || 0} 人`;
+
+    return `
+      <article class="flight-card">
+        <div class="flight-side">
+          <strong>${escapeHTML(flight.departure_time || "—")}</strong>
+          <small>${escapeHTML(leftLabel)}</small>
+        </div>
+        <div class="flight-middle" aria-hidden="true">→</div>
+        <div class="flight-side">
+          <strong>${escapeHTML(flight.arrival_time || "—")}</strong>
+          <small>${escapeHTML(rightLabel)}</small>
+        </div>
+        <div class="flight-extra">
+          ${escapeHTML(formatDate(flight.date, { weekday: false }))}
+          · ${escapeHTML(flight.flight || "")}
+          · 乘客：${escapeHTML(passengers)}
+          ${flight.note ? `<br>${escapeHTML(flight.note)}` : ""}
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
 /* ---------- 待辦事項 ---------- */
 
 function renderTodos() {
@@ -486,6 +533,7 @@ async function loadTrip() {
 
     applyTheme();
     renderHeader();
+    renderFlights();
     renderTodos();
     renderDays();
     setupPageActions();
